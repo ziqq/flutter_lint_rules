@@ -1,11 +1,11 @@
-# beauty box lint rules
+# Flutter lint rules
 
-<!-- [![Build Status](https://shields.io/github/workflow/status/Beauty-Box/flutter_bb_lint_rules/Analysis?logo=github&logoColor=white)](https://github.com/Beauty-Box/flutter_bb_lint_rules)
-[![Pub Version](https://img.shields.io/pub/v/bb_lint_rules?logo=dart&logoColor=white)](https://pub.dev/packages/bb_lint_rules)
-[![Pub Likes](https://badgen.net/pub/likes/bb_lint_rules)](https://pub.dev/packages/bb_lint_rules)
-[![Pub popularity](https://badgen.net/pub/popularity/bb_lint_rules)](https://pub.dev/packages/bb_lint_rules/score)
-![Dart Platform](https://badgen.net/pub/dart-platform/bb_lint_rules)
-![Flutter Platform](https://badgen.net/pub/flutter-platform/bb_lint_rules) -->
+<!-- [![Build Status](https://shields.io/github/workflow/status/Beauty-Box/flutter_flutter_lint_rules/Analysis?logo=github&logoColor=white)](https://github.com/Beauty-Box/flutter_flutter_lint_rules)
+[![Pub Version](https://img.shields.io/pub/v/flutter_lint_rules?logo=dart&logoColor=white)](https://pub.dev/packages/flutter_lint_rules)
+[![Pub Likes](https://badgen.net/pub/likes/flutter_lint_rules)](https://pub.dev/packages/flutter_lint_rules)
+[![Pub popularity](https://badgen.net/pub/popularity/flutter_lint_rules)](https://pub.dev/packages/flutter_lint_rules/score)
+![Dart Platform](https://badgen.net/pub/dart-platform/flutter_lint_rules)
+![Flutter Platform](https://badgen.net/pub/flutter-platform/flutter_lint_rules) -->
 
 <!-- This package is part of the [SurfGear](https://github.com/Beauty-Box/SurfGear) toolkit made by [beautybox](https://beautybox.ru). -->
 
@@ -17,14 +17,14 @@ Lint rules used by "beauty box".
 
 ## Installation
 
-Add `bb_lint_rules` as dependency to your `pubspec.yaml`
+Add `flutter_lint_rules` as dependency to your `pubspec.yaml`
 
 ```yaml
 dependencies:
-  bb_lint_rules: $currentVersion$
+  flutter_lint_rules: $currentVersion$
 ```
 
-<!-- <p>At this moment, the current version of <code>bb_lint_rules</code> is <a style="display: inline-block;" href="https://pub.dev/packages/bb_lint_rules"><img style="vertical-align:bottom;" src="https://img.shields.io/pub/v/bb_lint_rules.svg" alt="bb_lint_rules version"></a>.</p> -->
+<!-- <p>At this moment, the current version of <code>flutter_lint_rules</code> is <a style="display: inline-block;" href="https://pub.dev/packages/flutter_lint_rules"><img style="vertical-align:bottom;" src="https://img.shields.io/pub/v/flutter_lint_rules.svg" alt="flutter_lint_rules version"></a>.</p> -->
 
 ## Example
 
@@ -33,7 +33,7 @@ You can use both `stable` and `dev` versions of the package listed above in the 
 Create `analysis_options.yaml` file
 
 ```yaml
-include: package:bb_lint_rules/analysis_options.yaml
+include: package:flutter_lint_rules/analysis_options.yaml
 ```
 
 See the `dartanalyzer` executing the lint checks in you favorite editor.
