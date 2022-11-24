@@ -52,10 +52,10 @@ dart_code_metrics:
   rules:
     - always-remove-listener
     - avoid-returning-widgets
-    - avoid-unnecessary-setstate
+    # - avoid-unnecessary-setstate
     - binary-expression-operand-order
     - no-equal-then-else
-    - prefer-trailing-comma
+    # - prefer-trailing-comma
     - member-ordering-extended:
         alphabetize: false # todo set true after code-dart_code_metrics update
         order:
