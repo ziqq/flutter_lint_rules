@@ -10,4 +10,4 @@ environment:
 
 dependencies:
   flutter_lints: ^2.0.1
-  dart_code_metrics: ^5.0.1
+  dart_code_metrics: 4.21.2
