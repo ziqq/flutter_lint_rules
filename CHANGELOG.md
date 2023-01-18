@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 1.7.0
+
+* Update [dart_code_metrics] with [analyzer]
 
 ## 1.6.0
 ### Remove
