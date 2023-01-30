@@ -4,6 +4,10 @@
 
 * Update [dart_code_metrics] with [analyzer] -->
 
+## 1.7.0
+### Remove
+* invariant_booleans rule;
+
 ## 1.6.0
 ### Remove
 * comment_references rule;
