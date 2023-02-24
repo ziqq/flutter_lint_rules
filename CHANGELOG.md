@@ -1,8 +1,8 @@
 # Changelog
 
-<!-- ## 1.7.0
+## 1.7.1
 
-* Update [dart_code_metrics] with [analyzer] -->
+* Update [dart_code_metrics]
 
 ## 1.7.0
 ### Remove
