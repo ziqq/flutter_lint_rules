@@ -1,8 +1,62 @@
 # Changelog
+## 1.8.0
+### Added
+* dart_code_metrics:
+  - comment_references rule;
+  - always-remove-listener rule;
+  - avoid-border-all rule;
+  - avoid-cascade-after-if-null rule;
+  - avoid-collection-methods-with-unrelated-types rule;
+  - avoid-double-slash-imports rule;
+  - avoid-duplicate-exports rule;
+  - avoid-expanded-as-spacer rule;
+  - avoid-global-state rule;
+  - avoid-missing-enum-constant-in-map rule;
+  - avoid-returning-widgets rule;
+  - avoid-unrelated-type-assertions rule;
+  - avoid-unused-parameters rule;
+  - avoid-unnecessary-conditionals rule;
+  - avoid-unnecessary-setstate rule;
+  - avoid-unnecessary-type-casts rule;
+  - avoid-unnecessary-type-assertions rule;
+  - avoid-wrapping-in-padding rule;
+  - avoid-passing-async-when-sync-expected rule;
+  - binary-expression-operand-order rule;
+  - check-for-equals-in-render-object-setters rule;
+  - consistent-update-render-object rule;
+  - double-literal-format rule;
+  - no-boolean-literal-compare rule;
+  - no-equal-then-else rule;
+  - no-object-declaration rule;
+  - prefer-const-border-radius rule;
+  - prefer-correct-edge-insets-constructor rule;
+  - prefer-correct-test-file-name rule;
+  - prefer-immediate-return rule;
+  - prefer-last rule;
+  - prefer-using-list-view rule;
+  - prefer-static-class rule;
+  - prefer-correct-type-name rule;
+  - prefer-single-widget-per-file rule;
+  - use-setstate-synchronously rule;
+  - avoid-banned-imports rule;
+### Remove
+* comment_references rule;
+* always_put_required_named_parameters_first rule;
+* avoid_positional_boolean_parameters rule;
+* avoid_positional_boolean_parameters rule;
+* avoid_void_async rule;
+* constant_identifier_names rule;
+* directives_ordering rule;
+* omit_local_variable_types rule;
+* prefer_if_elements_to_conditional_expressions rule;
+* unawaited_futures rule;
+* unnecessary_await_in_return rule;
+* unnecessary_lambdas rule;
+* sort_pub_dependencies rule;
 
-<!-- ## 1.7.0
-
-* Update [dart_code_metrics] with [analyzer] -->
+## 1.7.1
+### Update
+* [dart_code_metrics] with [analyzer]
 
 ## 1.7.0
 ### Remove

@@ -36,7 +36,7 @@ class OrderExample {
 
   static final staticFinal = staticConst.isEven;
 
-  static int staticField = 42;
+  static const int staticField = 42;
 
   final fin = 42;
 
