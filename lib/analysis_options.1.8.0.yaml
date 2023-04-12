@@ -222,6 +222,7 @@ linter:
     prefer_const_literals_to_create_immutables: true
     unnecessary_const: true
     unnecessary_late: true
+    constant_identifier_names: false
 
     # Error rules.
     avoid_dynamic_calls: true
