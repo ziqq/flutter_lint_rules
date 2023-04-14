@@ -1,4 +1,4 @@
-// Copyright (c) 2019-present,  MARABIDIS LLC
+// Copyright (c) 2019-present,  Anton Ustinoff <a.a.ustinoff@gmail.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,4 +19,6 @@
 /// there are times where one or more futures are intentionally not awaited.
 /// This function may be used to ignore a particular future. It silences the
 /// `unawaited_futures` lint.
+
+// ignore: avoid-unused-parameters
 void unawaited(Future<void> future) {}
