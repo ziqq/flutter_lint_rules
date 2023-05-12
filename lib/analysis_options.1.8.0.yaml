@@ -65,7 +65,7 @@ analyzer:
 
   strong-mode:
     # implicit-dynamic: false
-    implicit-casts: false
+    # implicit-casts: false
 
 dart_code_metrics:
   constant_identifier_names: false

@@ -53,6 +53,7 @@
 * unnecessary_await_in_return rule;
 * unnecessary_lambdas rule;
 * sort_pub_dependencies rule;
+* implicit-casts;
 
 ## 1.7.1
 ### Update
