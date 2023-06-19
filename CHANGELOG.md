@@ -1,4 +1,10 @@
 # Changelog
+
+## 1.8.1
+### Remove
+  * linter
+    - no_leading_underscores_for_local_identifiers
+
 ## 1.8.0
 ### Added
 * dart_code_metrics:
