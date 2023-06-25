@@ -376,7 +376,7 @@ linter:
     conditional_uri_does_not_exist: true
     no_leading_underscores_for_library_prefixes: true
 
-    # no_leading_underscores_for_local_identifiers: true
+    no_leading_underscores_for_local_identifiers: false
 
     secure_pubspec_urls: true
     sized_box_shrink_expand: true
