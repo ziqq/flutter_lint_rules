@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.2
+### Remove
+  * linter
+    - prefer_single_quotes
+
 ## 1.8.1
 ### Remove
   * linter
