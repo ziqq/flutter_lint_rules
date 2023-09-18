@@ -1,6 +1,8 @@
 # Changelog
 
 ## 1.8.2
+### Update
+  * dependencies version's
 ### Remove
   * linter
     - prefer_single_quotes
