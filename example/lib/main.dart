@@ -12,7 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:meta/meta.dart';
 import 'package:flutter_lint_rules/flutter_lint_rules.dart';
 
 import 'async_function.dart';
@@ -67,11 +66,6 @@ class OrderExample {
   }
 
   void foo() {
-    return;
-  }
-
-  @protected
-  void protectedFoo() {
     return;
   }
 }
