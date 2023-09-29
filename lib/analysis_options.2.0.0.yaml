@@ -1,5 +1,13 @@
 # autor - <a.a.ustinoff@gmail.com> Anton Ustinoff
 
+##################################################################################
+##                      Linter rules for all packages                           ##
+##                      -----------------------------                           ##
+## Note that there is no need to define another                                 ##
+## analysis-options.yaml in each package because they will                      ##
+## automatically go up the tree if not found in the package. See here:          ##
+## https://dart.dev/guides/language/analysis-options#the-analysis-options-file  ##
+##################################################################################
 include: package:flutter_lints/flutter.yaml
 
 ##
@@ -71,8 +79,6 @@ dart_code_metrics:
   extends:
     - package:dart_code_metrics_presets/all.yaml
 
-  constant_identifier_names: false
-
   metrics-exclude:
     - test/**
 
@@ -101,6 +107,60 @@ dart_code_metrics:
 
   rules:
     ########################################################################
+    ##          DART CODE METRICS PRESETS PLUGIN: ENABLED RULES           ##
+    ########################################################################
+    - arguments-ordering: false
+    #! avoid-ignoring-return-values should be set to true
+    - avoid-ignoring-return-values: false
+    - avoid-late-keyword: false
+    - avoid-passing-async-when-sync-expected: false
+    #! avoid-nested-conditional-expressions maybe set to true
+    - avoid-nested-conditional-expressions: false
+    - avoid-non-ascii-symbols: false
+    - avoid-non-null-assertion: false
+    - avoid-top-level-members-in-tests:
+        exclude: ['test/helpers/**']
+    - prefer-async-await: false
+    - prefer-commenting-analyzer-ignores: false
+    - prefer-conditional-expressions: false
+    - prefer-correct-identifier-length: false
+    - prefer-extracting-callbacks: false
+    - prefer-match-file-name: false
+    - prefer-moving-to-variable: false
+    - prefer-trailing-comma: false
+    - member-ordering: false
+    - missing-test-assertion:
+        include-assertions:
+          - verify
+          - verifyNever
+        include-methods:
+          - customTest
+    - newline-before-return: false
+    - no-equal-arguments: false
+    - no-magic-number: false
+
+    - prefer-static-class:
+        ignore-private: true
+        ignore-names:
+          - (.*)BusyKey
+          - (.*)BusyObjectKey
+          - (.*)Provider
+          - (.*)_mocks
+          - (.*)_mock
+          - Mock(.*)
+          - mock_(.*)
+          - use(.*)
+          - show(.*)
+          - navigate(.*)
+          - getAndRegister(.*)
+
+    - format-comment: false
+    # - format-comment:
+    #     only-doc-comments: true
+    #     ignored-patterns:
+    #       - ^ // autor -
+
+    ########################################################################
     ##             DART CODE METRICS PLUGIN: ENABLED RULES                ##
     ##                                                                    ##
     ## Rules below are all the rules from dart-code-metrics that we use.  ##
@@ -123,10 +183,6 @@ dart_code_metrics:
     - avoid-unnecessary-type-assertions
     - avoid-wrapping-in-padding
 
-    - avoid-passing-async-when-sync-expected:
-      exclude:
-        - '**/test/**'
-
     - binary-expression-operand-order
     - check-for-equals-in-render-object-setters
     - consistent-update-render-object
@@ -142,9 +198,6 @@ dart_code_metrics:
     - prefer-immediate-return
     - prefer-last
     - prefer-using-list-view
-
-    - prefer-static-class:
-        - ignore-private: true
 
     - prefer-correct-type-name:
         min-length: 3
@@ -224,21 +277,9 @@ linter:
     prefer_const_constructors_in_immutables: true
     prefer_const_declarations: true
     prefer_const_literals_to_create_immutables: true
-    unnecessary_const: true
-    unnecessary_late: true
 
     # unawaited_futures: true
 
-    # Error rules.
-    avoid_dynamic_calls: true
-    avoid_empty_else: true
-    avoid_print: true
-    avoid_relative_lib_imports: true
-    avoid_returning_null_for_future: true
-    avoid_slow_async_io: true
-    avoid_type_to_string: true
-    avoid_types_as_parameter_names: true
-    avoid_web_libraries_in_flutter: true
     cancel_subscriptions: true
     close_sinks: true
     control_flow_in_finally: true
@@ -253,7 +294,6 @@ linter:
     prefer_void_to_null: true
     test_types_in_equals: true
     throw_in_finally: true
-    unnecessary_statements: true
     unrelated_type_equality_checks: true
     unsafe_html: true
     use_build_context_synchronously: true
@@ -264,6 +304,16 @@ linter:
     always_declare_return_types: true
     always_require_non_null_named_parameters: true
     annotate_overrides: true
+
+    avoid_dynamic_calls: true
+    avoid_empty_else: true
+    avoid_print: true
+    avoid_relative_lib_imports: true
+    avoid_returning_null_for_future: true
+    avoid_slow_async_io: true
+    avoid_type_to_string: true
+    avoid_types_as_parameter_names: true
+    avoid_web_libraries_in_flutter: true
     avoid_annotating_with_dynamic: true
     avoid_bool_literals_in_conditional_expressions: true
     avoid_catches_without_on_clauses: true
@@ -289,21 +339,26 @@ linter:
     avoid_single_cascade_in_expression_statements: true
     avoid_unnecessary_containers: true
     avoid_unused_constructor_parameters: true
+
     await_only_futures: true
+
     camel_case_extensions: true
     camel_case_types: true
+
     cascade_invocations: true
     curly_braces_in_flow_control_structures: true
     deprecated_consistency: true
-    do_not_use_environment: true
+
     empty_catches: true
     empty_constructor_bodies: true
+
     exhaustive_cases: true
     file_names: true
     implementation_imports: true
     leading_newlines_in_multiline_strings: true
     library_names: true
     library_prefixes: true
+
     missing_whitespace_between_adjacent_strings: true
     no_runtimeType_toString: true
     null_closures: true
@@ -312,6 +367,7 @@ linter:
     overridden_fields: true
     package_api_docs: true
     parameter_assignments: true
+
     prefer_adjacent_string_concatenation: true
     prefer_asserts_in_initializer_lists: true
     prefer_collection_literals: true
@@ -340,16 +396,22 @@ linter:
     # prefer_double_quotes: true
     prefer_spread_collections: true
     prefer_typing_uninitialized_variables: true
+
     provide_deprecation_message: true
     public_member_api_docs: false
     recursive_getters: true
     sized_box_for_whitespace: true
     slash_for_doc_comments: true
+
     sort_child_properties_last: false # maybe to true
     sort_constructors_first: false
     sort_unnamed_constructors_first: false
+
     type_annotate_public_apis: true
     type_init_formals: true
+
+    unnecessary_const: true
+    unnecessary_late: true
     unnecessary_brace_in_string_interps: true
     unnecessary_getters_setters: true
     unnecessary_new: true
@@ -360,9 +422,15 @@ linter:
     unnecessary_overrides: true
     unnecessary_parenthesis: true
     unnecessary_raw_strings: true
+    unnecessary_statements: true
     unnecessary_string_escapes: true
     unnecessary_string_interpolations: true
     unnecessary_this: true
+
+    do_not_use_environment: true
+
+    use_colored_box: true
+    use_decorated_box: true
     use_full_hex_values_for_flutter_colors: true
     use_function_type_syntax_for_parameters: true
     use_if_null_to_convert_nulls_to_bools: true
@@ -374,18 +442,17 @@ linter:
     use_setters_to_change_properties: true
     use_string_buffers: true
     use_to_and_as_if_applicable: true
+
     void_checks: true
     lines_longer_than_80_chars: false
     flutter_style_todos: true
     conditional_uri_does_not_exist: true
-    no_leading_underscores_for_library_prefixes: true
 
+    no_leading_underscores_for_library_prefixes: true
     no_leading_underscores_for_local_identifiers: false
 
     secure_pubspec_urls: true
     sized_box_shrink_expand: true
-    use_decorated_box: true
-    use_colored_box: true
 
     # Pub rules.
     package_names: true
