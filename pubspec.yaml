@@ -1,4 +1,4 @@
-version: 1.8.2
+version: 2.0.0
 name: flutter_lint_rules
 description: Lint rules for Dart and Flutter projects.
 repository: "https://github.com/ziqq/flutter_lint_rules"
@@ -10,4 +10,5 @@ environment:
 
 dependencies:
   flutter_lints: ^2.0.3
-  dart_code_metrics: ^5.7.6
+  # dart_code_metrics: ^5.7.6
+  dart_code_metrics_presets: ^2.4.0
