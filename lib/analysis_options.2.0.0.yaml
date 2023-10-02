@@ -112,7 +112,8 @@ dart_code_metrics:
     - arguments-ordering: false
     #! avoid-ignoring-return-values should be set to true
     - avoid-ignoring-return-values: false
-    - avoid-late-keyword: false
+    - avoid-late-keyword:
+        allow-initialized: true
     - avoid-passing-async-when-sync-expected: false
     #! avoid-nested-conditional-expressions maybe set to true
     - avoid-nested-conditional-expressions: false
