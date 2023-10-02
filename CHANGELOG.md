@@ -3,6 +3,8 @@
 ## 2.0.0
   ### Feat
   * Replaced `dart_code_metrics` to `dart_code_metrics_presets`
+  ### Update
+  * set `avoid-late-keyword` to `true`
 
 ## 1.8.2
   ### Update
