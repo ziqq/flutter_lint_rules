@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+  ### Feat
+  * Added `avoid-returning-widgets` rule
+
 ## 2.0.0
   ### Feat
   * Replaced `dart_code_metrics` to `dart_code_metrics_presets`
