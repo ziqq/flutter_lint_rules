@@ -1,8 +1,9 @@
 # Changelog
 
 ## 2.0.1
-  ### Feat
-  * Added `avoid-returning-widgets` rule
+  ### Fix
+  * Replaced `avoid-returning-widgets`
+  * Removed `strong-mode`
 
 ## 2.0.0
   ### Feat
