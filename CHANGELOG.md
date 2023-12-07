@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0
+  ### Feat
+  * Added `easy` options
+  ### Update
+  * Split options to `easy` and `extended`
+
 ## 2.0.2
   ### Update
   * `dart_code_metrics_presets` version
