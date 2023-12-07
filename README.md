@@ -32,8 +32,16 @@ You can use both `stable` and `dev` versions of the package listed above in the 
 
 Create `analysis_options.yaml` file
 
+Include extended analysis options
+
 ```yaml
 include: package:flutter_lint_rules/analysis_options.yaml
+```
+
+Include easy analysis options
+
+```yaml
+include: package:flutter_lint_rules/analysis_options_easy.yaml
 ```
 
 See the `dartanalyzer` executing the lint checks in you favorite editor.
