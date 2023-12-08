@@ -8,7 +8,11 @@
 ## automatically go up the tree if not found in the package. See here:          ##
 ## https://dart.dev/guides/language/analysis-options#the-analysis-options-file  ##
 ##################################################################################
+include: package:flutter_lints/flutter.yaml
 
+##
+# Lint rules to be used for apps without developer facing API. i.e. command line tools and Flutter applications
+##
 analyzer:
   exclude:
     - build/**
