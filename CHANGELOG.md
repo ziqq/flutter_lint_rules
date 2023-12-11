@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.1
+  ### Fix
+  - [EASY] Removed `prefer_expression_function_bodies`
+  - [EASY] Removed `always_use_package_imports`
+  - [EASY] Removed `directives_ordering`
+
 ## 2.1.0
   ### Feat
   * Added `easy` options
