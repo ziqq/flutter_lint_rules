@@ -1,7 +1,11 @@
-version: 2.1.0
 name: flutter_lint_rules
+
 description: Lint rules for Dart and Flutter projects
+
+version: 2.1.1
+
 repository: "https://github.com/ziqq/flutter_lint_rules"
+
 issue_tracker: "https://github.com/ziqq/flutter_lint_rules/issues"
 
 environment:
