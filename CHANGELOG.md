@@ -1,9 +1,10 @@
 # Changelog
 
-## 2.1.1
+## 2.1.1 - 2.1.2
   ### Fix
   - [EASY] Removed `prefer_expression_function_bodies`
   - [EASY] Removed `always_use_package_imports`
+  - [EASY] Removed `lines_longer_than_80_chars`
   - [EASY] Removed `directives_ordering`
 
 ## 2.1.0
