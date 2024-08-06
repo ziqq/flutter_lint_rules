@@ -1,0 +1,7 @@
+ignore:
+  - flutter_lints
+  - dart_code_metrics
+  - dart_code_metrics_presets
+
+exclude:
+  - "example/**"
